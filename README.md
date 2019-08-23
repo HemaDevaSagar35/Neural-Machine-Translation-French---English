@@ -23,7 +23,21 @@ The encoder part of the model is composed of Bidirectional LSTM, whereas the dec
 Trained the model for almost 5 days till 400 epochs. Used beam search to find a translation that approximately maximizes the conditional probability, [link to the paper](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf), and obtained a Bleu score of 10.9 on the above sampled test set
 
 ## Some Examples
+**example 1** : <br />
+**French input** : comité préparatoire de la conférence des nations unies sur le commerce illicite des armes légères sous tous ses aspects <br />
+**Actual English Translation** : preparatory committee for the united nations conference on the illicit trade in small arms and light weapons in all its aspects <br />
+**Model's English Translation** : preparatory committee for the united nations conference on the illicit trade in small arms and light weapons in all its aspects <br />
 
+
+**example 2** : <br />
+**French input** : il est grand temps que la communauté internationale applique cette résolution <br />
+**Actual English Translation** : it was high time that the international community implemented that resolution <br />
+**Model's English Translation** : it is high time that the international community should be adopted by the resolution <br />
+
+**example 3** : <br />
+**French input** : conclusions concertées sur l'élimination de toutes les formes de discrimination et de violence à l'égard des petites filles <br />
+**Actual English Translation** : agreed conclusions on the elimination of all forms of discrimination and violence against the girl child <br />
+**Model's English Translation** : conclusions conclusions on the elimination of all forms of discrimination and violence against the young people. <br />
 
 ## Future work
 * Visualize the model's attention on different words while translating a source language sample (language being French here)
